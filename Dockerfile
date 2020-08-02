@@ -20,7 +20,7 @@ RUN apt-get -y install libspandsp-dev libopus-dev libspeex-dev
 
 
 WORKDIR /usr/src/asterisk-$ASTERISK_VERSION 
-RUN contrib/scripts/get_mp3_source.s
+RUN contrib/scripts/get_mp3_source.sh
 
 RUN ./configure \
   --prefix=/usr/local/asterisk \
